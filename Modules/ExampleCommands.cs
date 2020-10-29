@@ -14,7 +14,8 @@ namespace csharpi.Modules
     // for commands to be available, and have the Context passed to them, we must inherit ModuleBase
     public class ExampleCommands : ModuleBase
     {
-        /* [Command("hello")]
+        //original snippet
+        [Command("hello")]
         public async Task HelloCommand()
         {
             // initialize empty string builder for reply
@@ -30,8 +31,9 @@ namespace csharpi.Modules
 
             // send simple string reply
             await ReplyAsync(sb.ToString());
-        } */
+        }
 
+        /* //F U snippet
         [Command("hello")]
         public async Task HelloCommand()
         {
@@ -53,7 +55,7 @@ namespace csharpi.Modules
             // send simple string reply
             await ReplyAsync(sb.ToString());
             }
-        }
+        } */
 
         /*
         [Command("position")]
